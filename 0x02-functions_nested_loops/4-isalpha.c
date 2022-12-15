@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * _isalpha - Return 1 if c is a letter. lowercase or uppercase
- * @c: unsigned int value to be compared with ASCII value
- * Return: 1 if its alphabet otherwise 0
+ * _isalpha - checks for char alphabet
+ * @c: the char to be checked
+ *
+ * Return: 1 if char is letter lower or upper, 0 otherwise
  */
 
 int _isalpha(int c)
 {
-		if (c >= 65 && c <= 122)
-					return (1);
-			else
-						return (0);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
